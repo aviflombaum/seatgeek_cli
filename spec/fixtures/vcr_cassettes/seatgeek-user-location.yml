@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.seatgeek.com/2/events?geoip=108.41.19.28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.seatgeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 14 Feb 2016 18:44:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Etag:
+      - '"869ebfdb648509ab886bd57e7264c89af485b8c2"'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Varnish:
+      - '1850966800'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - lb-14-04-i-8152c308
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"per_page":10,"total":20253,"page":1,"geolocation":{"city":"New
+        York","display_name":"New York, NY","country":"US","lon":-74.0203,"range":"50mi","state":"NY","postal_code":"10004","lat":40.6888}},"events":[{"links":[],"id":2897218,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Royal
+        Hanneford Circus - White Plains","announce_date":"2015-10-30T00:00:00","score":0.466702,"date_tbd":false,"type":"family","datetime_local":"2016-02-14T10:00:00","visible_until_utc":"2016-02-14T19:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"performers":[{"stats":{"event_count":9},"name":"Royal
+        Hanneford Circus","short_name":"Royal Hanneford Circus","url":"https:\/\/seatgeek.com\/royal-hanneford-circus-tickets","type":"theater","image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/royal-hanneford-circus-677980\/8566\/huge.jpg","home_venue_id":null,"primary":true,"score":0.235949,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/royal-hanneford-circus-677980\/8566\/huge.jpg"},"slug":"royal-hanneford-circus","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":8566}],"url":"https:\/\/seatgeek.com\/royal-hanneford-circus-white-plains-tickets\/family\/2016-02-14-10-am\/2897218","created_at":"2015-10-30T00:00:00","venue":{"city":"White
+        Plains","name":"Westchester County Center","extended_address":"White Plains,
+        NY 10607","url":"https:\/\/seatgeek.com\/venues\/westchester-county-center\/tickets","country":"US","display_location":"White
+        Plains, NY","links":[],"slug":"westchester-county-center","state":"NY","score":0.536158,"postal_code":"10607","location":{"lat":41.0366,"lon":-73.7784},"address":"198
+        Central Ave","timezone":"America\/New_York","id":4508},"short_title":"Royal
+        Hanneford Circus - White Plains","datetime_utc":"2016-02-14T15:00:00","datetime_tbd":false},{"links":[],"id":3064962,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Royal
+        Hanneford Family Spectacular - White Plains","announce_date":"2016-01-28T00:00:00","score":0.483822,"date_tbd":false,"type":"family","datetime_local":"2016-02-14T10:00:00","visible_until_utc":"2016-02-14T19:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"performers":[{"stats":{"event_count":9},"name":"Royal
+        Hanneford Family Spectacular","short_name":"Royal Hanneford Family Spectacular","url":"https:\/\/seatgeek.com\/royal-hanneford-family-spectacular-tickets","type":"theater_family","image":null,"home_venue_id":null,"primary":true,"score":0,"images":{},"slug":"royal-hanneford-family-spectacular","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"has_upcoming_events":true,"id":94644}],"url":"https:\/\/seatgeek.com\/royal-hanneford-family-spectacular-white-plains-tickets\/family\/2016-02-14-10-am\/3064962","created_at":"2016-01-28T00:00:00","venue":{"city":"White
+        Plains","name":"Westchester County Center","extended_address":"White Plains,
+        NY 10607","url":"https:\/\/seatgeek.com\/venues\/westchester-county-center\/tickets","country":"US","display_location":"White
+        Plains, NY","links":[],"slug":"westchester-county-center","state":"NY","score":0.536158,"postal_code":"10607","location":{"lat":41.0366,"lon":-73.7784},"address":"198
+        Central Ave","timezone":"America\/New_York","id":4508},"short_title":"Royal
+        Hanneford Family Spectacular - White Plains","datetime_utc":"2016-02-14T15:00:00","datetime_tbd":false},{"links":[],"id":2844668,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Sesame
+        Street Live - New York","announce_date":"2015-10-07T00:00:00","score":0.53322,"date_tbd":false,"type":"dance_performance_tour","datetime_local":"2016-02-14T10:30:00","visible_until_utc":"2016-02-14T19:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"performers":[{"stats":{"event_count":157},"name":"Sesame
+        Street Live","short_name":"Sesame Street Live","url":"https:\/\/seatgeek.com\/sesame-street-live-tickets","type":"theater_dance_performance_tour","image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/sesame-street-live-3ea5fb\/5356\/huge.jpg","home_venue_id":null,"primary":true,"score":0.368584,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/sesame-street-live-3ea5fb\/5356\/huge.jpg"},"slug":"sesame-street-live","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":5356}],"url":"https:\/\/seatgeek.com\/sesame-street-live-new-york-tickets\/dance\/2016-02-14-10-30-am\/2844668","created_at":"2015-10-07T00:00:00","venue":{"city":"New
+        York","name":"The Theater at Madison Square Garden","extended_address":"New
+        York, NY 10001","url":"https:\/\/seatgeek.com\/venues\/the-theater-at-madison-square-garden\/tickets","country":"US","display_location":"New
+        York, NY","links":[],"slug":"the-theater-at-madison-square-garden","state":"NY","score":0.657629,"postal_code":"10001","location":{"lat":40.75,"lon":-73.9942},"address":"4
+        Pennsylvania Plaza","timezone":"America\/New_York","id":2513},"short_title":"Sesame
+        Street Live - New York","datetime_utc":"2016-02-14T15:30:00","datetime_tbd":false},{"links":[],"id":2992417,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Berenstain
+        Bears - New York","announce_date":"2015-12-22T00:00:00","score":0,"date_tbd":false,"type":"family","datetime_local":"2016-02-14T11:00:00","visible_until_utc":"2016-02-14T20:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"performers":[{"stats":{"event_count":8},"name":"Berenstain
+        Bears","short_name":"Berenstain Bears","url":"https:\/\/seatgeek.com\/berenstain-bears-tickets","type":"theater_family","image":null,"home_venue_id":null,"primary":true,"score":0,"images":{},"slug":"berenstain-bears","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"has_upcoming_events":true,"id":19423}],"url":"https:\/\/seatgeek.com\/berenstain-bears-new-york-tickets\/family\/2016-02-14-11-am\/2992417","created_at":"2015-12-22T00:00:00","venue":{"city":"New
+        York","name":"Manhattan Movement and Arts Center - MMAC","extended_address":"New
+        York, NY 10023","url":"https:\/\/seatgeek.com\/venues\/manhattan-movement-and-arts-center-mmac\/tickets","country":"US","display_location":"New
+        York, NY","links":[],"slug":"manhattan-movement-and-arts-center-mmac","state":"NY","score":0,"postal_code":"10023","location":{"lat":40.7716,"lon":-73.9886},"address":"248
+        West 60th Street","timezone":"America\/New_York","id":43917},"short_title":"Berenstain
+        Bears - New York","datetime_utc":"2016-02-14T16:00:00","datetime_tbd":false},{"links":[],"id":2728910,"stats":{"listing_count":0,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Dorthaan''s
+        Place Jazz Brunch with Antoinette Montague","announce_date":"2015-08-01T00:00:00","score":0.521932,"date_tbd":false,"type":"concert","datetime_local":"2016-02-14T11:00:00","visible_until_utc":"2016-02-14T20:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":3},"name":"Dorthaan''s
+        Place Jazz Brunch","short_name":"Dorthaan''s Place Jazz Brunch","url":"https:\/\/seatgeek.com\/dorthaan-s-place-jazz-brunch-tickets","type":"band","image":null,"home_venue_id":null,"primary":true,"score":0.404852,"images":{},"slug":"dorthaan-s-place-jazz-brunch","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":143684},{"stats":{"event_count":2},"name":"Antoinette
+        Montague","short_name":"Antoinette Montague","url":"https:\/\/seatgeek.com\/antoinette-montague-tickets","type":"band","image":null,"home_venue_id":null,"slug":"antoinette-montague","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":256005}],"url":"https:\/\/seatgeek.com\/dorthaan-s-place-jazz-brunch-with-antoinette-montague-tickets\/newark-new-jersey-new-jersey-performing-arts-center-2016-02-14-11-am\/concert\/2728910","created_at":"2015-08-01T00:00:00","venue":{"city":"Newark","name":"New
+        Jersey Performing Arts Center","extended_address":"Newark, NJ 07102","url":"https:\/\/seatgeek.com\/venues\/new-jersey-performing-arts-center\/tickets","country":"US","display_location":"Newark,
+        NJ","links":[],"slug":"new-jersey-performing-arts-center","state":"NJ","score":0.612494,"postal_code":"07102","location":{"lat":40.7397,"lon":-74.1678},"address":"1
+        Center Street","timezone":"America\/New_York","id":665},"short_title":"Dorthaan''s
+        Place Jazz Brunch with Antoinette Montague","datetime_utc":"2016-02-14T16:00:00","datetime_tbd":false},{"links":[],"id":2977789,"stats":{"listing_count":0,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Donuts
+        are Forever 10 with The Rock and Roll Playhouse","announce_date":"2015-12-18T00:00:00","score":0.461036,"date_tbd":false,"type":"concert","datetime_local":"2016-02-14T11:15:00","visible_until_utc":"2016-02-14T20:15:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"performers":[{"stats":{"event_count":7},"name":"The
+        Rock and Roll Playhouse","short_name":"The Rock and Roll Playhouse","url":"https:\/\/seatgeek.com\/the-rock-and-roll-playhouse-tickets","type":"band","image":null,"home_venue_id":null,"slug":"the-rock-and-roll-playhouse","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":366593},{"stats":{"event_count":1},"name":"Donuts
+        are Forever 10","short_name":"Donuts are Forever 10","url":"https:\/\/seatgeek.com\/donuts-are-forever-10-tickets","type":"band","image":null,"home_venue_id":null,"primary":true,"score":0,"images":{},"slug":"donuts-are-forever-10","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":406475}],"url":"https:\/\/seatgeek.com\/donuts-are-forever-10-with-the-rock-and-roll-playhouse-tickets\/brooklyn-new-york-brooklyn-bowl-2016-02-14-11-15-am\/concert\/2977789","created_at":"2015-12-18T00:00:00","venue":{"city":"Brooklyn","name":"Brooklyn
+        Bowl","extended_address":"Brooklyn, NY 11211","url":"https:\/\/seatgeek.com\/venues\/brooklyn-bowl\/tickets","country":"US","display_location":"Brooklyn,
+        NY","links":[],"slug":"brooklyn-bowl","state":"NY","score":0.51315,"postal_code":"11211","location":{"lat":40.7222,"lon":-73.9575},"address":"61
+        Wythe Ave","timezone":"America\/New_York","id":3526},"short_title":"Donuts
+        are Forever 10 with The Rock and Roll Playhouse","datetime_utc":"2016-02-14T16:15:00","general_admission":true,"datetime_tbd":false},{"links":[],"id":3049183,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Lady
+        Bunny''s Froggy Style Valentine - New York","announce_date":"2016-01-21T00:00:00","score":0,"date_tbd":false,"type":"theater","datetime_local":"2016-02-14T11:30:00","visible_until_utc":"2016-02-14T20:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":4},"name":"Senor
+        Frog''s Froggy Style Brunch","short_name":"Senor Frog''s Froggy Style Brunch","url":"https:\/\/seatgeek.com\/senor-frog-s-froggy-style-brunch-tickets","type":"band","image":null,"home_venue_id":null,"slug":"senor-frog-s-froggy-style-brunch","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":414341},{"stats":{"event_count":1},"name":"Lady
+        Bunny''s Froggy Style Valentine","short_name":"Lady Bunny''s Froggy Style
+        Valentine","url":"https:\/\/seatgeek.com\/lady-bunny-s-froggy-style-valentine-tickets","type":"band","image":null,"home_venue_id":null,"primary":true,"score":0,"images":{},"slug":"lady-bunny-s-froggy-style-valentine","taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":424408}],"url":"https:\/\/seatgeek.com\/lady-bunny-s-froggy-style-valentine-new-york-tickets\/theater\/2016-02-14-11-30-am\/3049183","created_at":"2016-01-21T00:00:00","venue":{"city":"New
+        York","name":"Senor Frogs","extended_address":"New York, NY 10036","url":"https:\/\/seatgeek.com\/venues\/senor-frogs-4\/tickets","country":"US","display_location":"New
+        York, NY","links":[],"slug":"senor-frogs-4","state":"NY","score":0,"postal_code":"10036","location":{"lat":40.7566,"lon":-73.9896},"address":"640
+        8th Avenue","timezone":"America\/New_York","id":211092},"short_title":"Lady
+        Bunny''s Froggy Style Valentine - New York","datetime_utc":"2016-02-14T16:30:00","datetime_tbd":false},{"links":[],"id":2855469,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Quinnipiac
+        Bobcats at Saint Peter''s Peahens Womens Basketball","announce_date":"2015-10-11T00:00:00","score":0,"date_tbd":false,"type":"ncaa_womens_basketball","datetime_local":"2016-02-14T12:00:00","visible_until_utc":"2016-02-14T21:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1030000,"name":"basketball"},{"parent_id":1030000,"id":1030300,"name":"ncaa_womens_basketball"}],"performers":[{"away_team":true,"stats":{"event_count":5},"name":"Quinnipiac
+        Bobcats Womens Basketball","short_name":"Quinnipiac (Women)","url":"https:\/\/seatgeek.com\/quinnipiac-bobcats-womens-basketball-tickets","type":"ncaa_womens_basketball","image":null,"home_venue_id":4186,"slug":"quinnipiac-bobcats-womens-basketball","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1030000,"name":"basketball"},{"parent_id":1030000,"id":1030300,"name":"ncaa_womens_basketball"}],"has_upcoming_events":true,"id":61673},{"stats":{"event_count":4},"name":"Saint
+        Peter''s Peahens Womens Basketball","short_name":"Saint Peter''s (Women)","url":"https:\/\/seatgeek.com\/saint-peter-s-peahens-womens-basketball-tickets","type":"ncaa_womens_basketball","image":null,"home_team":true,"home_venue_id":null,"primary":true,"score":0,"images":{},"slug":"saint-peter-s-peahens-womens-basketball","taxonomies":[{"parent_id":null,"id":1000000,"name":"sports"},{"parent_id":1000000,"id":1030000,"name":"basketball"},{"parent_id":1030000,"id":1030300,"name":"ncaa_womens_basketball"}],"has_upcoming_events":true,"id":107707}],"url":"https:\/\/seatgeek.com\/quinnipiac-bobcats-at-saint-peter-s-peahens-womens-basketball-tickets\/ncaa-womens-basketball\/2016-02-14-12-pm\/2855469","created_at":"2015-10-11T00:00:00","venue":{"city":"Jersey
+        City","name":"Yanitelli Center","extended_address":"Jersey City, NJ 07306","url":"https:\/\/seatgeek.com\/venues\/yanitelli-center\/tickets","country":"US","display_location":"Jersey
+        City, NJ","links":[],"slug":"yanitelli-center","state":"NJ","score":0,"postal_code":"07306","location":{"lat":40.7266,"lon":-74.0715},"address":"Saint
+        Peters College","timezone":"America\/New_York","id":4207},"short_title":"Quinnipiac
+        (Women) at Saint Peter''s (Women)","datetime_utc":"2016-02-14T17:00:00","datetime_tbd":false},{"links":[],"id":2758649,"stats":{"listing_count":2,"average_price":235.0,"lowest_price_good_deals":235.0,"lowest_price":235.0,"highest_price":235.0},"title":"Blue
+        Man Group - New York","announce_date":"2015-08-13T00:00:00","score":0.589455,"date_tbd":false,"type":"theater","datetime_local":"2016-02-14T12:00:00","visible_until_utc":"2016-02-14T21:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":1234},"name":"Blue
+        Man Group","short_name":"Blue Man Group","url":"https:\/\/seatgeek.com\/blue-man-group-tickets","type":"theater","image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/blue-man-group-67a7db\/5194\/huge.jpg","home_venue_id":null,"primary":true,"score":0.39759,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/blue-man-group-67a7db\/5194\/huge.jpg"},"slug":"blue-man-group","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":5194}],"url":"https:\/\/seatgeek.com\/blue-man-group-new-york-tickets\/theater\/2016-02-14-12-pm\/2758649","created_at":"2015-08-13T00:00:00","venue":{"city":"New
+        York","name":"Astor Place Theatre","extended_address":"New York, NY 10003","url":"https:\/\/seatgeek.com\/venues\/astor-place-theatre\/tickets","country":"US","display_location":"New
+        York, NY","links":[],"slug":"astor-place-theatre","state":"NY","score":0.433427,"postal_code":"10003","location":{"lat":40.7292,"lon":-73.992},"address":"434
+        Lafayette Street","timezone":"America\/New_York","id":3883},"short_title":"Blue
+        Man Group - New York","datetime_utc":"2016-02-14T17:00:00","datetime_tbd":false},{"links":[],"id":2618442,"stats":{"listing_count":5,"average_price":83.0,"lowest_price_good_deals":63.0,"lowest_price":63.0,"highest_price":83.0},"title":"The
+        Gazillion Bubble Show - New York","announce_date":"2015-05-22T00:00:00","score":0.423956,"date_tbd":false,"type":"theater","datetime_local":"2016-02-14T12:00:00","visible_until_utc":"2016-02-14T21:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":296},"name":"The
+        Gazillion Bubble Show","short_name":"The Gazillion Bubble Show","url":"https:\/\/seatgeek.com\/the-gazillion-bubble-show-tickets","type":"theater","image":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/the-gazillion-bubble-show-3c6bd9\/8167\/huge.jpg","home_venue_id":null,"primary":true,"score":0.35647,"images":{"huge":"https:\/\/chairnerd.global.ssl.fastly.net\/images\/performers-landscape\/the-gazillion-bubble-show-3c6bd9\/8167\/huge.jpg"},"slug":"the-gazillion-bubble-show","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":8167}],"url":"https:\/\/seatgeek.com\/the-gazillion-bubble-show-new-york-tickets\/theater\/2016-02-14-12-pm\/2618442","created_at":"2015-05-22T00:00:00","venue":{"city":"New
+        York","name":"New World Stages \/ Stage 2","extended_address":"New York, NY
+        10019","url":"https:\/\/seatgeek.com\/venues\/new-world-stages-stage-2\/tickets","country":"US","display_location":"New
+        York, NY","links":[],"slug":"new-world-stages-stage-2","state":"NY","score":0.411446,"postal_code":"10019","location":{"lat":40.7628,"lon":-73.9874},"address":"340
+        West 50th Street","timezone":"America\/New_York","id":4374},"short_title":"The
+        Gazillion Bubble Show - New York","datetime_utc":"2016-02-14T17:00:00","datetime_tbd":false}]}'
+    http_version: 
+  recorded_at: Sun, 14 Feb 2016 18:44:21 GMT
+recorded_with: VCR 3.0.0

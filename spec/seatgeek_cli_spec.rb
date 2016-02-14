@@ -6,10 +6,10 @@ describe SeatgeekCLI do
   end
 
   context SeatgeekCLI::CLI do
+    let(:cli){SeatgeekCLI::CLI.new("108.41.19.28")}
+
     describe '#initialize' do
       it 'accepts an IP address for the user' do
-        cli = SeatgeekCLI::CLI.new('108.41.19.28')
-
         expect(cli.external_ip).to eq('108.41.19.28')
       end
 
@@ -22,11 +22,22 @@ describe SeatgeekCLI do
     end
 
     describe '#call' do
-      let(:cli){SeatgeekCLI::CLI.new("108.41.19.28")}
-      
       it 'Welcomes the user to Seatgeek upon call' do
-        expect{cli.call}.to output("Welcome to Seatgeek you geek!\n").to_stdout
+        VCR.use_cassette("seatgeek-user-location") do
+          expect{cli.call}.to output("Welcome to Seatgeek you geek!\nYou are in: New York, NY\n").to_stdout
+        end
       end
+    end
+
+    describe '#user_location' do
+      it 'returns the user location based on the Seatgeek Geolocation Data' do
+        VCR.use_cassette("seatgeek-user-location") do
+          expect(cli.user_location).to eq("New York, NY")
+        end
+      end
+    end
+
+    describe '#list_concerts' do
     end
   end
 end
