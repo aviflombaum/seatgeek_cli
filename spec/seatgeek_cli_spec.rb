@@ -21,23 +21,42 @@ describe SeatgeekCLI do
       end
     end
 
-    describe '#call' do
+    describe '#greet_user' do
       it 'Welcomes the user to Seatgeek upon call' do
-        VCR.use_cassette("seatgeek-user-location") do
-          expect{cli.call}.to output("Welcome to Seatgeek you geek!\nYou are in: New York, NY\n").to_stdout
-        end
+        expect{cli.greet_user}.to output("Welcome to Seatgeek you geek!\n").to_stdout
+      end
+    end
+
+    describe '#print_location' do
+      it 'prints the location of the user from seatgeek' do
+        expect{cli.print_location}.to output("You are in: New York, NY\n").to_stdout
       end
     end
 
     describe '#user_location' do
       it 'returns the user location based on the Seatgeek Geolocation Data' do
-        VCR.use_cassette("seatgeek-user-location") do
-          expect(cli.user_location).to eq("New York, NY")
-        end
+        expect(cli.user_location).to eq("New York, NY")
       end
     end
 
-    describe '#list_concerts' do
+    describe '#list_events' do
+      it 'prints out all the event titles' do
+        expect{
+          cli #=> trigger the events to load
+          SeatgeekCLI::Event.reset_all!
+
+          # Creating some known data.
+          event_1 = SeatgeekCLI::Event.new
+          event_1.title = "Event 1"
+          event_1.save
+
+          event_2 = SeatgeekCLI::Event.new
+          event_2.title = "Event 2"
+          event_2.save
+
+          cli.list_events
+        }.to output("Events near you:\n1. Event 1\n2. Event 2\n").to_stdout
+      end
     end
   end
 end
